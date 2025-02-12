@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 30px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+a:hover{
+    color: #FD868F;
+    transition: 0.3s all;
+}
+
+#conosco{
+    border: 2px solid #FD868F;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#conosco:hover{
+    background-color: #FD868F;
+    transition: 0.3s all;
+    color: white;
+}
+
+#conoscobtn{
+    background-color: green;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    }
+    
+#zapzap{
+        color: white;
+}
+
+
+.hamburguer{
+    border: none;
+    background: none;
+    display: none;
+}
+
+
+.nav-list{
+    display: none;
+}
+
+
+
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 43px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+span{
+    color: #FD868F;
+}
+
+p{
+    line-height: 20px;
+    max-width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#img1{
+    display: block;
+    width: 400px;
+}
+
+#img2{
+        display: block;
+            width: 400px;
+}
+
+
+form{
+    display: flex;
+    flex-direction:column;
+    width: 70%;
+}
+
+input{
+    margin-top: 10px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+}
+
+#enviar{
+    background-color: #FD868F;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 40%;
+}
+
+#enviar:hover{
+    background-color: #FFDBE1;
+    color: #FD868F;
+    transition: 0.3s all;
+}
+
+#mais-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#mais{
+    background-color: #FD868F;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 10%;
+}
+
+#mais:hover{
+    background-color: #FFDBE1;
+    color: #FD868F;
+    transition: 0.3s all;
+}
+
+#sobre-nos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#servicos{
+    display: inline-block;
+    align-items: center;
+}
+
+#card-container{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    gap:20px;
+    max-width: 1200px;
+}
+
+
+.cards {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.cards h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(34, 34, 34);
+}
+
+.cards p {
+    font-size: 16px;
+    color: #666;
+}
+
+i{
+    color: rgb(34, 34, 34);
+    font-size: 50px;
+    color:#FD868F;
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+#social{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#social-icon{
+    font-size: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+
+    header{
+        display: inline-block;
+    }
+
+    main{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    #conosco{
+        display: none;
+    }
+
+    #conoscobtn{
+        display: block;
+    }
+
+
+    .hamburguer{
+        display: block;
+        font-size: 30px;
+        color: white;
+        position: fixed;
+        bottom: 90%;
+        right: 10%;
+    }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+
+    }
+
+    #menu-pc{
+        display: none;
+    }
+
+
+
+    #mais-info{
+        display: none;
+    }
+
+    #card-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img1{
+        display: none;
+    }
+    
+    #img2{
+        display: none;
+    }
+
+    p{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    form{
+        width: 100%;
+    }
